@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zilla+Slab:wght@600;700&display=swap');
+
+:root{
+    --blanco: white;
+    --rojo: red;
+    --negro: #1a1819;
+    --naranja: #ff5900;
+    --sombra: #ccc;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--negro);
+}
+.ancho {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 3px var(--rojo) solid;
+
+}
+.margen {
+  padding: 15px;
+}
+
+.titulo_pagina,
+.titulo_card,
+.titulo_todas {
+  font-family: 'Zilla Slab', Georgia, serif;
+  color: var(--negro);
+}
+h3,
+.btn_naranja {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.encabezado {
+  padding: 20px 24px 44px;
+  text-align: center;
+}
+.titulo_pagina {
+  font-size: 37px;
+  line-height: 43px;
+}
+
+.ancho_cartas,
+.todas_entradas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.ancho_cartas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.card {
+  position: relative;
+  flex: 300px;
+  background-color: var(--blanco);
+  border: 1px solid var(--sombra);
+  border-radius: 10px;
+}
+.foto {
+  position: relative;
+}
+.foto img {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.titulo_card {
+  padding: 20px 20px 90px;
+  font-size: 22.4px;
+  font-weight: 600;
+  line-height: 1.05;
+}
+.btn_naranja {
+  position: absolute;
+  right: 20px;
+  bottom: 17px;
+  font-size: 14px;
+  color: var(--naranja);
+  text-decoration: none;
+}
+
+.circuloFecha {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--naranja);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circuloFecha h3 {
+  line-height: 13px;
+  color: var(--blanco);
+}
+.mes {
+  font-size: 13px;
+}
+.dia {
+  font-size: 10px;
+}
+
+.categoria {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 16px;
+  background-color: var(--naranja);
+}
+.categoria h3 {
+  font-size: 13px;
+  line-height: 25px;
+  color: var(--blanco);
+}
+
+.todas_entradas {
+  padding-top: 20px;
+  padding-bottom: 28px;
+  text-align: right;
+}
+.titulo_todas {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--naranja);
+}
+
+.fondo_naranja {
+  padding: 12px;
+  background-color: var(--naranja);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: var(--blanco);
+}
+
+@media(max-width: 480px){
+  .encabezado {
+    padding-top: 39px;
+    padding-bottom: 49px;
+  }
+  .ancho_cartas {
+    gap: 80px;
+    padding: 0 29px 91px;
+  }
+  .todas_entradas {
+    display: none;
+  }
+  .foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titulo_card {
+    padding: 6px 25px 53px;
+    font-size: 25.6px;
+  }
+  .btn_naranja {
+    right: 25px;
+    bottom: 22px;
+    font-size: 16px;
+  }
+  .circuloFecha,
+  .categoria {
+    position: static;
+  }
+  .circuloFecha {
+    width: 50px;
+    height: 50px;
+    margin: 10px 21px 10px 0;
+  }
+  .circuloFecha h3 {
+    line-height: 15px;
+  }
+  .mes {
+    font-size: 14px;
+  }
+  .dia {
+    font-size: 11px;
+  }
+  .categoria {
+    padding: 0 18px;
+  }
+  .categoria h3 {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .fondo_naranja {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
